@@ -195,7 +195,7 @@ let sendOrder = () => {
 
   document.querySelector(".msg").innerHTML = loader();
 
-  fetch("http://localhost:3000/api/products/order", {
+  fetch(baseUrl+"/order", {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
