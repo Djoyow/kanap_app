@@ -20,7 +20,7 @@ fetch('http://localhost:3000/api/products')
             document
                 .querySelector('#items')
                 .insertAdjacentHTML("afterbegin",
-                    `<a href="../product/product.html?id=${product._id}">
+                    `<a href="./html/product/product.html?id=${product._id}">
                         <article>
                             <img src="${product.imageUrl}" alt="${product.altTxt}">
                             <h3 class="productName">${product.name}</h3>
