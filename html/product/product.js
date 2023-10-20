@@ -1,9 +1,10 @@
 
 let params = new URLSearchParams(document.location.search);
 let prod = [];
+let baseUrl = "https://kanap-api-7e691b121bb9.herokuapp.com/api/products/";
 
 
-fetch('http://localhost:3000/api/products/' + params.get('id'))
+fetch(baseUrl + params.get('id'))
     .then((response) => { return response.json() })
     .then((product) => {
 
